@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/review/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Dragon Fruit</title>
+    <link rel="stylesheet" href="/review/CustomerReviews.css" />
+  </head>
+  <body>
+
+    <header class="header">
+      <a href="#" class="logo"
+        ><i class="fas fa-shopping-basket"></i><span>D</span>ragon <span>F</span>ruit</a>
+
+      <nav class="navbar">
+        <a href="/index.html">home</a>
+            <a href="/feauters/features.html">features</a>
+            <a href="/products/index.html">products</a>
+            <a href="/review/CustomerReviews.html">review</a>
+            <a href="/Our Team/Our Team.html">our team</a>
+      </nav>
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+      <form class="search-form">
+        <input type="search" id="search-box" placeholder="Search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="/images/watermelon.jpg" alt="watermelon" />
+          <div class="content">
+            <h3>Watermelon</h3>
+            <span class="price">20$</span>
+            <span class="quantity">Qty: 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="/images/mango.jpg" alt="mango" />
+          <div class="content">
+            <h3>Mango</h3>
+            <span class="price">30$</span>
+            <span class="quantity">Qty: 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="/images/papaya.jpg" alt="papaya" />
+          <div class="content">
+            <h3>papaya</h3>
+            <span class="price">25$</span>
+            <span class="quantity">Qty: 1</span>
+          </div>
+        </div>
+        <div class="total">Total: 75$</div>
+        <a href="#" class="btn">Checkout</a>
+      </div>
+      <form class="login-form">
+        <h3>Login Now</h3>
+        <input type="email" class="box" placeholder="Email-ID" />
+        <input type="password" class="box" placeholder="Password" />
+        <p>Forgot your Password? <a href="#">Click here</a></p>
+        <p>Don't have an Account? <a href="#">Create New Account</a></p>
+        <input type="submit" value="Login Now" class="btn" />
+      </form>
+    </header>
+    
+    <div class="container">
+      <h1>Customer Reviews</h1>
+      <form id="commentForm">
+        <input type="text" id="name" placeholder="your name" required />
+        <input type="url" id="imageUrl" placeholder="Image link (optional)" />
+        <textarea
+          id="commentText"
+          placeholder="write a comment here"
+          required
+        ></textarea>
+        <button type="submit">submit</button>
+      </form>
+      <div id="commentsContainer"></div>
+    </div>
+    <script src="/review/CustomerReviews.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
